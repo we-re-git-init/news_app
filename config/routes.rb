@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  namespace :api do
+    get '/articles' => 'articles#index'
+  end
   # EXAMPLE HTML ROUTE
   # get "/photos" => "photos#index"
 
